@@ -1,0 +1,76 @@
+openapi: 3.1.0
+info:
+  title: Template komplettering regel API
+  version: 1.0.0
+  description: Template för komplettering regel OpenAPI.
+
+paths:
+  /regel/template/{handlaggningId}:
+    get:
+      tags: [RegelTemplateController]
+      operationId: getKomplettering
+      summary: Hämta information som behövs för kompletteringen
+      description: Hämta information som behövs för kompletteringen
+      parameters:
+        - $ref: "#/components/parameters/HandlaggningId"
+      responses:
+        "200":
+          description: Information hämtad OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TemplateKompletteringData"
+        "400":
+          description: Ogiltig begäran
+        "403":
+          description: Åtkomst nekad
+        "404":
+          description: Informationen hittades inte
+        "500":
+          description: Internt serverfel
+        "503":
+          description: Tjänsten är inte tillgänglig
+    patch:
+      tags: [RegelTemplateController]
+      operationId: patchKomplettering
+      summary: Registrera kompletterande uppgifter
+      description: Registrera kompletterande uppgifter
+      parameters:
+        - $ref: "#/components/parameters/HandlaggningId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TemplateKompletteringData"
+      responses:
+        "204":
+          description: Komplettering registrerad OK
+        "400":
+          description: Ogiltig begäran
+        "403":
+          description: Åtkomst nekad
+        "404":
+          description: Informationen hittades inte
+        "500":
+          description: Internt serverfel
+        "503":
+          description: Tjänsten är inte tillgänglig
+
+components:
+  parameters:
+    HandlaggningId:
+      name: handlaggningId
+      in: path
+      required: true
+      description: ID för handläggningsärendet
+      schema:
+        type: string
+        format: uuid
+
+  schemas:
+    TemplateKompletteringData:
+      type: object
+      properties:
+        template_my_attribute:
+          type: string

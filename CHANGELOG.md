@@ -1,3 +1,9 @@
+## 0.0.2 (2026-09-18)
+
+### Bug Fixes
+
+-  remove path prefix to align with komplettering openapi pattern ([adfa8](https://github.com/Forsakringskassan/rimfrost-template-regel-komplettering-openapi/commit/adfa85c60cb1764) Ulf Slunga)  
+
 # rimfrost-template-regel-komplettering-openapi changelog
 
 Changelog of rimfrost-template-regel-komplettering-openapi.

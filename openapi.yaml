@@ -5,7 +5,7 @@ info:
   description: Template för komplettering regel OpenAPI.
 
 paths:
-  /regel/template/{handlaggningId}:
+  /{handlaggningId}:
     get:
       tags: [RegelTemplateController]
       operationId: getKomplettering

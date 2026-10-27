@@ -1,3 +1,17 @@
+## 0.0.3 (2026-10-27)
+
+### Bug Fixes
+
+-  Replace github workflows ([6b3f9](https://github.com/Forsakringskassan/rimfrost-template-regel-komplettering-openapi/commit/6b3f972fcc9c8c1) Lars Persson)  
+-  **deps**  update jackson monorepo to v2.22.3 ([d46d0](https://github.com/Forsakringskassan/rimfrost-template-regel-komplettering-openapi/commit/d46d00ea72224ac) renovate[bot])  
+-  **deps**  update dependency org.openapitools:jackson-databind-nullable to v0.2.12 ([cbabd](https://github.com/Forsakringskassan/rimfrost-template-regel-komplettering-openapi/commit/cbabd56e19202ba) renovate[bot])  
+
+### Dependency updates
+
+- update gradle to v9.8.1 ([4c961](https://github.com/Forsakringskassan/rimfrost-template-regel-komplettering-openapi/commit/4c9617f330e8882) renovate[bot])  
+- update forsakringskassan/.github digest to cbd74f1 ([62f9e](https://github.com/Forsakringskassan/rimfrost-template-regel-komplettering-openapi/commit/62f9eec1a7bb200) renovate[bot])  
+- update gradle to v9.8.0 ([32417](https://github.com/Forsakringskassan/rimfrost-template-regel-komplettering-openapi/commit/32417deeaaaaa7e) renovate[bot])  
+- update forsakringskassan/.github digest to bfb01f7 ([77557](https://github.com/Forsakringskassan/rimfrost-template-regel-komplettering-openapi/commit/775577ae9239f09) renovate[bot])  
 ## 0.0.2 (2026-09-18)
 
 ### Bug Fixes
